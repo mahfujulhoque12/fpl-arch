@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainColor: #2b2b2b;
+  --borderColor: #cacaca;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================ 
+Hero
+=======================================*/
+
+/* ================================ 
+Mobile
+=======================================*/
+.mobile_navigation {
+  position: fixed;
+  z-index: 99;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.drawer_content.active {
+  transform: translateX(0);
+}
+
+.close_drawer {
+  /* text-align: end; */
+  border-bottom: 1px solid var(--borderColor);
+}
+.close_drawer button {
+  padding: 12px;
+  border: none;
+  background-color: white;
+}
+
+/* ================================ 
+MEDIA QUERIES
+=======================================*/
+
+@media (min-width: 996px) {
+ 
+
+  .nav__container ul li:focus-within .dropdown,
+  .nav__container ul li:hover .dropdown {
+    visibility: visible;
+  }
+
+  .nav_item_content:hover a:before,
+  .nav_item_content .active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    border-bottom: 2px solid #ffc879;
+  }
+
+
+}
+
+
+.loader {
+  @apply border-4 border-t-4 border-t-blue-500 border-gray-200 rounded-full w-5 h-5 animate-spin;
+}
+
+
+
+
+/* animation for why chose us */
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100) scale(1);
+  }
+}
+
+@keyframes exit {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+  }
+}
+
+.animate-enter {
+  animation: enter 1s ease-out forwards;
+}
+
+.animate-exit {
+  animation: exit 1s ease-out forwards;
+}
