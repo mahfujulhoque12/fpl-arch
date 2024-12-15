@@ -50,26 +50,21 @@ const ContactForm = () => {
             <div className="flex items-center mt-28 gap-2">
               <RiHome3Fill size={26} className="text-gray-100 mt-[-16px]" />
               <p className=" text-base font-normal text-gray-100 w-[300px]">
-                43 Mohakhali C/A (14th Level), Dhaka-1212, Bangladesh.
+              House # 29 (8th Floor), Block - A, Aftabnaga Main Road, Dhaka - 1219.
               </p>
             </div>
             <p className=" text-base font-normal text-gray-100 w-[300px] mt-4 flex items-center  gap-2">
               {" "}
               <FaPhoneVolume size={20} />
-              +029898, +055258
+              01896-088860
             </p>
 
             <p className=" text-base font-normal text-gray-100 w-[300px] mt-4 flex items-center  gap-2">
               {" "}
               <TiMessages size={25} />
-              support.plane@gmail.com
+              info.yourfpl@gmail.com
             </p>
 
-            <p className=" text-base font-normal text-gray-100 w-[300px] mt-4 flex items-center  gap-2">
-              {" "}
-              <MdPrint size={26} />
-              880-2-222295029
-            </p>
 
             <div className="text-gray-100 mt-28 flex gap-3">
               <Link href="#">
