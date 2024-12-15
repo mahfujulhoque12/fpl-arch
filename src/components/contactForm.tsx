@@ -4,7 +4,6 @@ import { FaPaperPlane } from "react-icons/fa";
 import { RiHome3Fill } from "react-icons/ri";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { TiMessages } from "react-icons/ti";
-import { MdPrint } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
